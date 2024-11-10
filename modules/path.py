@@ -84,10 +84,10 @@ def check_windows_env_variable(name):
     except Exception as e:
         print(f"Error reading from registry: {e}")
 
-def yieldGetPath(original = None):
+def getXAPI_Key(original = None):
     while True:
         apiKey = original != None and original or check_windows_env_variable("XAI_API_KEY")
-        if (apiKey and original != None):
+        if (apiKey and original == None):
             break
         else:
             enteredKey = input("Please enter your own XAI_API_KEY: ")

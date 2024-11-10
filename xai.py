@@ -179,7 +179,7 @@ def continue_chat():
         save_chat_history()
 
 messages.createMessages(build_path)
-apiKey = path.yieldGetPath(build_path)
+apiKey = path.getXAPI_Key()
 while True:
     answer = inquirer.prompt([
         inquirer.List('starter',
@@ -204,14 +204,15 @@ while True:
     elif (answer == 'Load Most Recent'):
         most_recent = messages.get_latest_message(build_path / "messages")
         if (not most_recent):
-            print("No loaded messages found! Please create a new chat!")
+            print("❌ No loaded messages found! Please create a new chat!")
             continue
         set_chat_to_conversation_id(most_recent.stem)
         continue_chat()
     elif (answer == 'Saved Chats'):
         messageNames = messages.get_all_messages(build_path / "messages")
-        if messageNames.count() == 0:
+        if messageNames.__len__() == 0:
             print("❌ No Saved Messages found! Please create your own!")
+            continue
         messageNames.append("Back")
         answer = inquirer.prompt([
             inquirer.List('starter',
@@ -228,7 +229,7 @@ while True:
         print("Visit the GitHub repository in order to get your API_Key")
         time.sleep(1)
     elif (answer == 'Set API Key'):
-        apiKey = path.yieldGetPath(apiKey)
+        apiKey = path.getXAPI_Key(apiKey)
     elif (answer == 'Quit'):
         break
     else:
