@@ -4,7 +4,7 @@
 
 ~~Now's your chance. With using the free xAI developer key, you can get $25 FREE of credits.~~
 
-UPDATE: This is no longer available without a purchase. The program still works with a valid API key.
+**UPDATE**: API keys are no longer available without a purchase. The program still works with a valid API key. 
 
 ## API KEY
 
@@ -32,4 +32,6 @@ You can also modify the settings by going to XAI_API_KEY.
 
 ## INSPIRATION
 
-I lost a bet from the 2024 election...I also like AIs🤓
+I like AIs and wanted it for free.
+
+**UPDATE**: Now you can just go to https://grok.com/ without an account and you can chat with the older model.
