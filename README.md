@@ -1,8 +1,10 @@
 ## ABSTRACT
 
-Ever wanted to try out XAI without needing to buy premium?
+~~Ever wanted to try out XAI without needing to buy premium?~~
 
-Now's your chance. With using the free XAI developer key, you can get $25 FREE of credits.
+~~Now's your chance. With using the free xAI developer key, you can get $25 FREE of credits.~~
+
+UPDATE: This is no longer available without a purchase. The program still works with a valid API key.
 
 ## API KEY
 
